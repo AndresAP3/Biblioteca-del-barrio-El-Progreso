@@ -30,17 +30,13 @@ export let libros = [
     }
 ]
 
-//funcion que recibe datos
 
-export function RecibeDatos(){
-    libros.push({
-        Titulo: "El extranjero",
-        Autor: "Albert Camus",
-        Estado: "Disponible"})
+//agregar libro
+export function agregarLibro(Titulo, Autor) {
+    console.log
 }
 
 
-RecibeDatos()
 
 //cambiar estado
 
@@ -55,4 +51,27 @@ console.log("Lista de libros: ")
     console.log(libros)
 }
 
+
+//funcion que muestre los libros disponibles
+
+export function LibrosDisponibles(){
+    
+    let disponibles = libros.filter(libro => libro.Estado == "Disponible")
+    console.log("Libros disponibles: ")
+    console.log(disponibles)
+}
+
+//funcon para mostar libros de una autor especifico
+
+export function LibrosAutor(nombreAutor){
+    let Nombres = libros.filter(libro => libro.Autor == nombreAutor)
+    console.log("Libros de Autor: " + nombreAutor)
+    console.log(Nombres)
+}
+
+
+agregarLibro("El extranjero", "Albert Camus")
+MostarLibros()
+LibrosDisponibles()
+LibrosAutor("Gabriel García Márquez")
 
