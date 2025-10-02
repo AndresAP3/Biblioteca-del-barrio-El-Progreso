@@ -2,7 +2,7 @@
 
 //Biblioteca de los libros
 
-let libros = [
+export let libros = [
     {
         Titulo: "Diario de Ana Frank",
         Autor: "Ana Frank",
@@ -32,7 +32,7 @@ let libros = [
 
 //funcion que recibe datos
 
-function RecibeDatos(){
+export function RecibeDatos(){
     libros.push({
         Titulo: "El extranjero",
         Autor: "Albert Camus",
@@ -41,12 +41,10 @@ function RecibeDatos(){
 
 
 RecibeDatos()
-console.log(libros)
 
 //cambiar estado
 
-function prestarLibro(indice){
-    libros[indice].Estado = "Prestado"
-}
+libros[0].Estado = "Prestado"
+console.log(libros)
 
-prestarLibro(1)
+
