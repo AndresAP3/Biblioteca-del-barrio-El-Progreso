@@ -45,6 +45,8 @@ console.log(libros)
 
 //cambiar estado
 
+function prestarLibro(indice){
+    libros[indice].Estado = "Prestado"
+}
 
-libros[0].Estado = "Prestado"
-
+prestarLibro(1)
