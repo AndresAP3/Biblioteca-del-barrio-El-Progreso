@@ -44,7 +44,15 @@ RecibeDatos()
 
 //cambiar estado
 
+export function cambiarEstado(){ 
 libros[0].Estado = "Prestado"
-console.log(libros)
+}
+
+//funcion de mostar los libros
+
+export function MostarLibros(){
+console.log("Lista de libros: ")
+    console.log(libros)
+}
 
 
