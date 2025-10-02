@@ -1,0 +1,19 @@
+{
+  "name": "clear",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresAP3/Biblioteca-del-barrio-El-Progreso.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndresAP3/Biblioteca-del-barrio-El-Progreso/issues"
+  },
+  "homepage": "https://github.com/AndresAP3/Biblioteca-del-barrio-El-Progreso#readme",
+  "description": ""
+}
