@@ -26,7 +26,7 @@ export let libros = [
     {
         Titulo: "Guerra y paz",
         Autor: "León Tolstói",
-        Estado: "Disponible"
+        Estado: "Prestado"
     }
 ]
 
@@ -75,3 +75,4 @@ agregarLibro("El extranjero", "Albert Camus")
 MostarLibros()
 LibrosDisponibles()
 LibrosAutor("Gabriel García Márquez")
+
