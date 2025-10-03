@@ -17,9 +17,11 @@ function registrarUsuarios(nombre, correo) {
     console.log("Usuario registrado:", usuario)
 }
 
+console.log(usuarios)
+
 registrarUsuarios("Juan Perez", "juan@gmail.com")
 registrarUsuarios("Ana Lopez", "ana@gmail.com")
 
-console.log(usuarios)
+
 
 
