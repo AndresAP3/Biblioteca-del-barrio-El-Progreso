@@ -36,7 +36,7 @@ export function agregarLibro(Titulo, Autor) {
     let libro = {
         Titulo: Titulo,
         Autor: Autor,
-        Estado: "Prestado"
+        Estado: "Disponible"
 
     }
 libros.push(libro)    
@@ -44,13 +44,6 @@ console.log("Libro Agregado: ")
 console.log(libro)
 }
 
-
-
-//cambiar estado
-export function cambiarEstado() {
-    libros[0].Estado = "Prestado";
-    console.log(`El libro "${libros[0].Titulo}" ahora está "Prestado"`);
-}
 
 //funcion de mostar los libros
 
@@ -82,5 +75,3 @@ agregarLibro("El extranjero", "Albert Camus")
 MostarLibros()
 LibrosDisponibles()
 LibrosAutor("Gabriel García Márquez")
-cambiarEstado(0, "Prestado")
-
