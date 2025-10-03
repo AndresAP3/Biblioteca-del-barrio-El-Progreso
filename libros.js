@@ -33,22 +33,30 @@ export let libros = [
 
 //agregar libro
 export function agregarLibro(Titulo, Autor) {
-    console.log
+    let libro = {
+        Titulo: Titulo,
+        Autor: Autor,
+        Estado: "Prestado"
+
+    }
+libros.push(libro)    
+console.log("Libro Agregado: ")
+console.log(libro)
 }
 
 
 
 //cambiar estado
-
-export function cambiarEstado(){ 
-libros[0].Estado = "Prestado"
+export function cambiarEstado() {
+    libros[0].Estado = "Prestado";
+    console.log(`El libro "${libros[0].Titulo}" ahora está "Prestado"`);
 }
 
 //funcion de mostar los libros
 
 export function MostarLibros(){
 console.log("Lista de libros: ")
-    console.log(libros)
+console.log(libros)
 }
 
 
@@ -64,9 +72,9 @@ export function LibrosDisponibles(){
 //funcon para mostar libros de una autor especifico
 
 export function LibrosAutor(nombreAutor){
-    let Nombres = libros.filter(libro => libro.Autor == nombreAutor)
+    let Resultado = libros.filter(libro => libro.Autor == nombreAutor)
     console.log("Libros de Autor: " + nombreAutor)
-    console.log(Nombres)
+    console.log(Resultado)
 }
 
 
@@ -74,4 +82,5 @@ agregarLibro("El extranjero", "Albert Camus")
 MostarLibros()
 LibrosDisponibles()
 LibrosAutor("Gabriel García Márquez")
+cambiarEstado(0, "Prestado")
 
